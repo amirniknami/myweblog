@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#efefef;  
+    letter-spacing: 1px;      
+}
+.blog-container{
+    color:#555;
+    font-family: lato;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+
+
+.blog-container article{
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    width:49%;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+.blog-container article h2{
+    color:#009688;
+    font-weight: 300;
+    font-size:24px;
+    padding-bottom: 15px;
+    width:100%;
+}
+
+
+.blog-container article .date,.blog-container article .author{ 
+    color:#777;       
+    width:50%;
+    padding-bottom: 10px;
+}
+
+.blog-container article .countinue {
+    padding-top: 15px;
+    color:#009688;
+}
+
+.blog-container article .countinue a {
+    color:#009688;
+    text-decoration: none;
+}
+
+.blog-container article .body{
+    color:#2D3037;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 120%;    
+}
+
+.blog-container article .countinue span{
+font-size: 14px;
+margin-left: 5px;
+}
+
+@media screen and (max-width: 640px){
+    .blog-container{
+        justify-content: space-around;
+    }
+  
+    .blog-container article{
+        width:95%;
+        
+    }
+}
+
+header{
+    width: 100%;
+    padding:15px;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);    
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    max-width:200px;
+    margin: auto;
+    list-style: none;
+}
+
+header p {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+header ul li a {
+    color:#2D3037;
+    text-decoration: none;
+}
+
+.post .article{
+    width:100%;
+}
+
+.post .article h2{
+    font-size:36px;
+    margin-bottom: 20px;
+}
+
+.post .article .date,.post .article .author{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.post .article .body{
+    font-size:22px;
+    text-align: justifu;
+    color:#2D3037;
+    line-height: 150%;
+}
+
+.paginate{
+    max-width:200px;
+    padding: 15px;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 10px;
+    background:white;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);        
+}
+
+.paginate a {
+    color:#009688;
+    text-decoration: none;
+}
